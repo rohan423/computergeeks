@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #111; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+li, a,button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+   color:lightgreen;
+  text-decoration: none;
+ 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color:  #24252A;
+  ;
+  background-position: center;
+  background-size: cover;
+  
+  
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav {
+  list-style: none;
+  
+  
+}
+
+.nav li{
+    display: inline-block;
+    padding: 0px 20px;
+    
+}
+
+.nav li a{
+    transition: all 0.3s ease;
+  
+}
+
+.nav li a:hover{
+  color: #0088a9;
+}
+
+button {
+  padding: 9px 25px ;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover{
+  background-color: rgba(0,136,169,1);
+}
+
+h1{
+  color: wheat;
+}
+
+.video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  max-height: 600px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+section{
+  padding: 0 100px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color:white;
+}
+
+
+.container{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.container ul{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.container ul li{
+  float:left;
+  list-style: none;
+  width:30%;
+  height:240px;
+  background: PINK;
+  margin :20px 0px 20px 1px; 
+  border:2px solid grey;
+  box-sizing: border-box;
+}
+.container ul li:hover{
+  opacity: 0.8;
+}
+
+.container ul li .bottom{
+  width: 100%;
+  height: 40px;
+  line-height: 20px;
+  background: 	#F08080;    
+  text-align: center;
+  color:white;
+  font-size: 20px;
+ 
+}
+
+.section{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: #111;
+}
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  flex-wrap: wrap;
+  
+}
+.container .box {
+  position: relative;
+  width: 320px;
+  height:400px;
+  color: #fff;
+background: #111;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 20px 30px;
+transition: 0.8s;
+}
+.container .box :hover{
+  transform: translateY(-3px);
+
+}
+.container .box::before{
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+background: linear-gradient(45deg,#ffbc00,#ff0058);
+}
+
+.container .box::after{
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+background: linear-gradient(45deg,#ffbc00,#ff0058);
+filter: blur(30px);
+}
+.container .box:nth-child(2)::before,
+.container .box:nth-child(2)::after
+{
+  background: linear-gradient(315deg,#03a9f4,#ff0058);
+}
+
+.container .box:nth-child(3)::before,
+.container .box:nth-child(3)::after
+{
+  background: linear-gradient(315deg,#4dff03,#00d0ff);
+}
+
+.container .box span{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: rgba(0,0,0,0.6);
+  z-index: 2;
+}
+.container.box span::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.1);
+  pointer-events: none;
+}
+.container .box .content{
+  position: relative;
+  z-index: 10;
+  padding: 20px 40px;
+}
+.container .box .content h2{
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+
+}
+
+.container .box .content p{
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+
+.container .box .content a{
+  display: inline-block;
+  font-size: 1.1em;
+  color: #111;
+  background: #fff;
+  padding: 10px;
+  text-decoration: none;
+font-weight: 700;
+}
+ 
+.footer {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 134%;
+  height: 90px;
+  background-color:greenyellow;
+  
+  color:black;
+  text-align: center;
+}

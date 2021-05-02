@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body {font-family: "Montserrat", sans-serif;}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: left;
+}
+
+#London {background-image: linear-gradient(-225deg, #7742B2 0%, #F180FF 52%, #FD8BD9 100%);}
+#Paris {background-image: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);}
+#Tokyo {background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);}
+#Oslo {background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);}
+</style>
+</head>
+<body>
+<button class="tablink" onclick="openCity('London', this, '#7742B2')" id="defaultOpen">C++</button>
+<button class="tablink" onclick="openCity('Paris', this, '#3d1635')">C</button>
+<button class="tablink" onclick="openCity('Tokyo', this, '#474046')">HTML</button>
+<button class="tablink" onclick="openCity('Oslo', this, '#c43a30')">PHP</button>
+
+
+<div id="London" class="tabcontent">
+ 
+  
+       <h2>TO FIND PALINDROME NUMBER</h2>  
+        <h2>Sample code :1</h2>
+      <span>#include </span> 
+      <span> < iosream > </span>
+      <br><span>using namespace std;</span>
+      <br>int main()
+       <br> {
+        <br>
+        &nbsp;&nbsp; &nbsp;&nbsp;int n, num, digit, rev = 0;
+        <br><br>
+        &nbsp;cout << "Enter a positive number: ";  
+        <br> &nbsp;cin >> num;
+        <br><br>
+        &nbsp;&nbsp; &nbsp;&nbsp;n = num;<br><br>
+      &nbsp;&nbsp;  do
+      <br>&nbsp;&nbsp;{ 
+      <br>
+      &nbsp;&nbsp; &nbsp;&nbsp; digit = num % 10;  
+      <br>
+      &nbsp;&nbsp; &nbsp;&nbsp; rev = (rev * 10) + digit;
+      <br>
+      &nbsp;&nbsp; &nbsp;&nbsp;num = num / 10;<br>
+      <br> &nbsp;&nbsp;} &nbsp;&nbsp;while (num != 0);
+      <br>
+      cout << "The reverse of the number is:" << rev << endl;
+      <br><br>
+      &nbsp; if (n == rev)<br>&nbsp; { <br>
+      &nbsp;&nbsp; &nbsp; cout << " The number is a palindrome."; 
+      <br>&nbsp; }
+      <br>
+       &nbsp;else <br>&nbsp; { 
+      <br>
+      &nbsp; &nbsp;cout<<"The number is not a palindrome.";
+      <br>
+      &nbsp; &nbsp;}  
+      <br>
+      &nbsp; return 0;
+      <br>
+  <h2>OUTPUT</h2>
+    1.<br>
+             Enter a positive number: 12321<br>
+             The reverse of the number is: 12321<br>
+             The number is a palindrome.<br>
+       <br>
+             2) <br>
+             Enter a positive number: 12331 <br>
+             The reverse of the number is: 13321 <br>
+             The number is not a palindrome.
+  
+  
+</div>
+
+<div id="Paris" class="tabcontent">
+
+       <h2>TO FIND PALINDROME NUMBER</h2>  
+        <h2>Sample code :2</h2>
+      <span>#include </span> 
+      <span> < stdio.h > </span>
+      <br>
+      <br>int main()
+       <br> {
+        <br>
+        &nbsp;&nbsp; &nbsp;&nbsp;int n, reversedn=0, r, og;
+        <br><br>
+        &nbsp;prinf("Enter a positive number: ");  
+        <br> &nbsp;scanf("%d", &n);
+        <br><br>
+        &nbsp;&nbsp; &nbsp;&nbsp;og = n;<br><br>
+      &nbsp;&nbsp;   while (n != 0)
+      <br>&nbsp;&nbsp;{ 
+      <br>
+      &nbsp;&nbsp; &nbsp;&nbsp; r = n % 10;
+      <br>
+      &nbsp;&nbsp; &nbsp;&nbsp; reversedn = reversedn* 10 + r;
+      <br>
+      &nbsp;&nbsp; &nbsp;&nbsp;        n /= 10;<br>
+      <br> &nbsp;&nbsp; &nbsp;&nbsp;}
+      <br>
+      if (og== reversedn)
+      <br><br>
+      &nbsp; <br>&nbsp; { <br>
+      &nbsp;&nbsp; &nbsp; printf("%d is a palindrome.", og);
+      <br>&nbsp; }
+      <br>
+       &nbsp;else <br>&nbsp; { 
+      <br>
+      &nbsp; &nbsp;printf("%d is not a palindrome.", og);
+      <br>
+      &nbsp; &nbsp;}  
+      <br>
+      &nbsp; return 0;
+      <br>
+      }
+  <h2>OUTPUT</h2>
+    1.<br>
+             Enter a positive number: 1001<br>
+   
+             The number is a palindrome.<br>
+       <br>
+             2. <br>
+             Enter a positive number: 12331 <br>
+            
+             The number is not a palindrome. 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  
+  <h1>HTML Multiple choice questions (MCQ's)</h1>
+  <br>
+  
+ 1. &nbsp;  HTML stands for -<br>
+
+a. HighText Machine Language<br>
+b. HyperText and links Markup Language<br>
+c. HyperText Markup Language<br>
+d. None of these<br>
+ <h5>ANSWER:  (c) HyperText Markup Language</h5><br><br>
+ 
+  
+  
+ 2.&nbsp;The correct sequence of HTML tags for starting a webpage is -<br>
+
+a. Head, Title, HTML, body <br>
+b. HTML, Body, Title, Head <br>
+c. HTML, Head, Title, Body <br>
+d. HTML, Head, Title, Body <br>
+ <h5>ANSWER: (d) HTML, Head, Title, Body</h5><br><br>
+ 
+ 3.&nbsp;Which of the following attribute is used to provide a unique name to an element? <br>
+a. class <br>
+b. id <br>
+c. type <br>
+d. None of the above <br>
+ 
+ <h5>ANSWER: (b) id </h5><br><br>
+ 
+ 4.&nbsp;Which of the following HTML attribute is used to define inline styles?<br>
+
+a. style<br>
+b. type<br>
+c. class<br>
+d. None of the above<br>
+<h5>ANSWER: (a) style </h5><br> <br>
+
+</div>
+
+<div id="Oslo" class="tabcontent">
+  <h1>PHP MCQ Questions</h1>
+  1.&nbsp; The term PHP is an acronym for PHP:_______________.<br>
+
+A. Hypertext Preprocessor <br>
+B. Hypertext multiprocessor<br>
+C. Hypertext markup Preprocessor<br>
+D. Hypertune Preprocessor<br>
+ <h5>ANSWER: A. Hypertext Preprocessor</h5><br><br>
+ 
+ 2. &nbsp;PHP is a ____________ language?<br>
+
+A. user-side scripting<br>
+B. client-side scripting<br>
+C. server-side scripting<br>
+D. Both B and C<br>
+<h5>ANSWER: C. server-side scripting</h5><br><br>
+
+3.&nbsp; Who among this is the founder of php language?<br>
+
+A. Tim Berners-Lee<br>
+B. Brendan Eich<br>
+C. Guido van Rossum<br>
+D. Rasmus Lerdorf<br>
+ <h5>ANSWER: D. Rasmus Lerdorf</h5><br><br>
+ 
+4.&nbsp;How many ways user can print output in PHP? <br>
+
+A. 1<br>
+B. 2<br>
+C. 3<br>
+D. 4<br>
+ <h5>ANSWER: B) 2 </h5><br><br>
+  
+</div>
+
+
+
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
